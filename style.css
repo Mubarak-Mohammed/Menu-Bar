@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.one,
+.tow,
+.three {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .one {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .tow {
+    opacity: 0;
+}
+
+.change .three {
+    transform: translate(0, -11px) rotate(45deg);
+}
